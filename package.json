@@ -16,6 +16,7 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-typography": "^0.16.13",
+    "tachyons": "^4.11.1",
     "typography": "^0.16.17",
     "typography-theme-fairy-gates": "^0.15.11"
   },
