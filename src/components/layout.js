@@ -1,8 +1,9 @@
 import React from "react";
+import "tachyons";
 import { StaticQuery, Link, graphql } from "gatsby";
 
 const ListLink = props => (
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+  <li className="mr3 dib">
     <Link to={props.to}>{props.children}</Link>
   </li>
 );
@@ -19,19 +20,12 @@ export default ({ children }) => (
       }
     `}
     render={data => (
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 650,
-          padding: `0 1rem`,
-          marginTop: `3rem`
-        }}
-      >
-        <header style={{ marginBottom: `1.5rem` }}>
+      <div className="mw5 mw7-ns center pa3 ph5-ns pt5">
+        <header className="flex justify-between flex-wrap">
           <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-            <h3 style={{ display: `inline` }}>{data.site.siteMetadata.name}</h3>
+            <h3 className="di">{data.site.siteMetadata.name}</h3>
           </Link>
-          <ul style={{ listStyle: `none`, float: `right` }}>
+          <ul className="ma0 mt3 mt0-ns di">
             <ListLink to="/">Home</ListLink>
             <ListLink to="/about">About</ListLink>
             <ListLink to="/contact">Contact</ListLink>
