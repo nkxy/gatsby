@@ -6,7 +6,9 @@ export default ({ data }) => (
   <Layout>
     <div>
       <h1>About me</h1>
-      <p>{data.dataJson.intro_paragraph}</p>
+      <p>{data.dataJson.about.work}</p>
+      <p>{data.dataJson.about.extracurriculars}</p>
+      <p>{data.dataJson.about.interests}</p>
     </div>
   </Layout>
 );
@@ -16,6 +18,8 @@ export const query = graphql`
     dataJson {
       about {
         work
+        extracurriculars
+        interests
       }
     }
   }
