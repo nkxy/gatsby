@@ -14,8 +14,17 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./src/data/`
+        path: `./src/data/`,
+        name: "data"
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/blog-content`,
+        name: "blog-content"
+      }
+    },
+    `gatsby-transformer-remark`
   ]
 };
