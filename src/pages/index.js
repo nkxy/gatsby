@@ -9,6 +9,7 @@ export default () => (
         <span role="img" aria-label="smiley">
           😛
         </span>
+        Here is my <a>Resume</a>
       </h1>
     </div>
   </Layout>
